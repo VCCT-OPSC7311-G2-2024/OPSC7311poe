@@ -1,5 +1,10 @@
 mindXcape is a mental health companion mobile application designed to help users manage their mental well-being through various features such as guided meditations, mood tracking, journaling, and sleep aids. The application aims to provide users with tools and resources to enhance their mental health and overall well-being.
 
+Team Members:
+Cameron Daniel Colley - ST10037966 
+Dylan Lee Padayachee - ST10177615 
+Kurt Joshau Siebritz - ST10208082 
+
 
 Features:
 •	User Registration and Authentication: Users can create an account and log in securely using Firebase Authentication.
