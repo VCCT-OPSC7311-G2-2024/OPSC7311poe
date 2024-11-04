@@ -1,0 +1,6 @@
+com.example.opsc7312poe.test.app-core-1.5.0-0 C:\Users\Gamer\.gradle\caches\transforms-3\4048c7ea70eaedccb832966b25a8864d\transformed\core-1.5.0\res
+com.example.opsc7312poe.test.app-annotation-experimental-1.4.0-1 C:\Users\Gamer\.gradle\caches\transforms-3\b34c631aea78e932c8d878943bdff0eb\transformed\annotation-experimental-1.4.0\res
+com.example.opsc7312poe.test.app-androidTest-2 C:\Users\Gamer\Desktop\OPC Backup\MindXcape\OPSC7312poe\app\build\generated\res\resValues\androidTest\debug
+com.example.opsc7312poe.test.app-mergeDebugAndroidTestResources-3 C:\Users\Gamer\Desktop\OPC Backup\MindXcape\OPSC7312poe\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.opsc7312poe.test.app-mergeDebugAndroidTestResources-4 C:\Users\Gamer\Desktop\OPC Backup\MindXcape\OPSC7312poe\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.opsc7312poe.test.app-debugAndroidTest-5 C:\Users\Gamer\Desktop\OPC Backup\MindXcape\OPSC7312poe\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

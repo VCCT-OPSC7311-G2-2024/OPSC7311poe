@@ -1,0 +1,137 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#5DB075"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_gravity="start" />
+
+        <!-- Title TextView (Centered) -->
+        <TextView
+            android:id="@+id/termsPoliciesTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Terms and Policies"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center" />
+
+        <!-- Logout Button (optional, remove if not needed) -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+    <!-- Privacy Content TextView -->
+    <TextView
+        android:id="@+id/termsPoliciesContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mindXcape upholds a commitment to providing a reliable and secure service. By using the app, users agree to the following terms:\n\n• User Account and Security: Users are responsible for safeguarding their login credentials. The app provides secure login options, including biometric authentication, to protect accounts.\n\• Content and Usage: All guided meditations, mood tracking, and journaling features are for personal, non-commercial use. Unauthorized distribution or modification of content is prohibited.\n\• Data Usage and Sync: Core features (mood tracking, meditation) are available offline, with automatic data sync when back online. Users consent to data syncing for continuous service improvement.\n\• Updates and Modifications: The app may introduce new features or modify existing ones to enhance user experience. Notifications of significant changes will be communicated.\n\• Termination: Accounts may be terminated if terms are violated or upon request, with data deletion aligned with privacy policies.\n\n\Disclaimer: The app is a mental wellness tool and is not intended to replace professional medical advice. Users experiencing severe mental health issues are advised to consult qualified professionals."
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:padding="8dp" />
+
+    <!-- Spacer to push the navbar to the bottom -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Navigation Bar Separator -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Home Icon -->
+        <ImageButton
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/home" />
+
+        <!-- Audio Icon -->
+        <ImageButton
+            android:id="@+id/nav_audio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/audio" />
+
+        <!-- Journal Icon -->
+        <ImageButton
+            android:id="@+id/nav_mood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mood" />
+
+        <ImageButton
+            android:id="@+id/nav_journal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/journal" />
+
+        <!-- Profile Icon -->
+        <ImageButton
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/profile" />
+    </LinearLayout>
+</LinearLayout>
+

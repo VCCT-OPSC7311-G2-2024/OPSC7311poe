@@ -4,9 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#5DB075</color>
     <color name="purple_500">#6200EE</color> <!-- Example color value -->
-    <color name="awful">#FF0000</color> <!-- Red for awful -->
-    <color name="bad">#FFA500</color>   <!-- Orange for bad -->
-    <color name="neutral">#FFFF00</color> <!-- Yellow for neutral -->
+    <color name="awful">#4A4949</color> <!-- Red for awful -->
+    <color name="bad">#163357</color>   <!-- Orange for bad -->
+    <color name="meh">#461459</color> <!-- Yellow for neutral -->
     <color name="good">#008000</color>   <!-- Green for good -->
-    <color name="rad">#0000FF</color>    <!-- Blue for rad -->
+    <color name="rad">#CCA942</color>    <!-- Blue for rad -->
+    <color name="mood_bar_color">#FF4081</color>
+    <color name="default_color">#1E1B63</color>
 </resources>

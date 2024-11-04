@@ -1,18 +1,20 @@
 package com.example.opsc7312poe
 
+import android.content.Intent
 import android.os.Bundle
 import android.media.MediaPlayer
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class AudioActivity : AppCompatActivity() {
     private lateinit var audioRecyclerView: RecyclerView
-    private lateinit var audioAdapter: AudioAdapter
-    private var audioList: MutableList<AudioItem> = mutableListOf()
+    lateinit var audioAdapter: AudioAdapter
+    var audioList: MutableList<AudioItem> = mutableListOf()
     private lateinit var searchBar: EditText
     private var mediaPlayer: MediaPlayer? = null
 
@@ -23,6 +25,18 @@ class AudioActivity : AppCompatActivity() {
         // Initialize RecyclerView and search bar
         audioRecyclerView = findViewById(R.id.audioRecyclerView)
         searchBar = findViewById(R.id.searchBar)
+
+        val navProfile: ImageButton = findViewById(R.id.nav_profile)
+        val navJournal: ImageButton = findViewById(R.id.nav_journal)
+        val navAudio: ImageButton = findViewById(R.id.nav_audio)
+        val navHome: ImageButton = findViewById(R.id.nav_home)
+        val navMood: ImageButton = findViewById(R.id.nav_mood)
+
+        navProfile.setOnClickListener { startActivity(Intent(this, AccountActivity::class.java)) }
+        navJournal.setOnClickListener { startActivity(Intent(this, JournalEntriesActivity::class.java)) }
+        navAudio.setOnClickListener { startActivity(Intent(this, AudioActivity::class.java)) }
+        navHome.setOnClickListener { startActivity(Intent(this, MainActivity::class.java)) }
+        navMood.setOnClickListener { startActivity(Intent(this, MoodTrack::class.java)) }
 
         // Initialize the audio list with 15 audio items
         audioList.apply {

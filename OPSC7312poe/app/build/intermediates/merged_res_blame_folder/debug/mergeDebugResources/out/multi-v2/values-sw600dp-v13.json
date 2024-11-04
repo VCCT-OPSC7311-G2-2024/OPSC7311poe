@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7312poe.app-mergeDebugResources-34:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.example.opsc7312poe.app-mergeDebugResources-48:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Gamer\\.gradle\\caches\\transforms-3\\58af7ce24071059ffa50f3ceae106afa\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\lab_services_student\\.gradle\\caches\\transforms-3\\1ec8d9300d0209c4bc53bc4692fd6829\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Gamer\\.gradle\\caches\\transforms-3\\4dc12f82e7dbc9b7fab19c47b1e18af1\\transformed\\appcompat-1.7.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\lab_services_student\\.gradle\\caches\\transforms-3\\a7a4c9a41263d60fdeb2105f8b98b988\\transformed\\appcompat-1.7.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

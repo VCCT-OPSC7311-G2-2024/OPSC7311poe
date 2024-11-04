@@ -1,0 +1,139 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#5DB075"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_gravity="start" />
+
+        <!-- Title TextView (Centered) -->
+        <TextView
+            android:id="@+id/privacyTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Privacy"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center" />
+
+        <!-- Logout Button (optional, remove if not needed) -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+    <!-- Privacy Content TextView -->
+
+    <!-- Spacer to push the navbar to the bottom -->
+
+    <TextView
+        android:id="@+id/privacyContent"
+        android:layout_width="match_parent"
+        android:layout_height="568dp"
+        android:padding="8dp"
+        android:text="The mindXcape app is committed to protecting user privacy and securely handling personal data. Key privacy measures include:\n\n• Data Collection and Usage: mindXcape collects essential information, such as user registration details (e.g., email and biometric data) and mood and meditation logs. This data is used solely to provide and improve the app’s mental health services.\n\n• Data Storage and Security: User data is stored using secure cloud services (e.g., Firebase for real-time data handling) and encrypted local databases (e.g., Room Database or SQLite) to ensure data is protected during online and offline access.\n\n• User Control: Users have control over data visibility and can customize preferences like notifications, theme settings, and language choices.\n\n• Third-Party Integration: Secure SSO options (Google, Facebook) are available, and data from these sources is handled in compliance with industry standards.\n\n• Compliance: The app adheres to data privacy regulations to protect user rights and ensure transparency."
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Navigation Bar Separator -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Home Icon -->
+        <ImageButton
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/home" />
+
+        <!-- Audio Icon -->
+        <ImageButton
+            android:id="@+id/nav_audio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/audio" />
+
+        <!-- Journal Icon -->
+        <ImageButton
+            android:id="@+id/nav_mood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mood" />
+
+        <ImageButton
+            android:id="@+id/nav_journal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/journal" />
+
+        <!-- Profile Icon -->
+        <ImageButton
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/profile" />
+    </LinearLayout>
+</LinearLayout>
+

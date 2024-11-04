@@ -1,0 +1,140 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:ignore="ExtraText">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#5DB075"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_gravity="start" />
+
+        <!-- Title TextView (Centered) -->
+        <TextView
+            android:id="@+id/helpSupportTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Help &amp; Support"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center" />
+
+        <!-- Logout Button (optional, remove if not needed) -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+    <!-- Privacy Content TextView -->
+
+    <!-- Spacer to push the navbar to the bottom -->
+
+    <TextView
+        android:id="@+id/helpSupportContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to mindXcape's Help &amp; Support! Here, you’ll find guidance on using the app, answers to common questions, and ways to reach our support team for personalized assistance.\n\nGetting Started\n\n• Account Setup: Begin by creating your profile. You can register with email, Google, or Facebook for easy sign-in. Biometric login is also available for added security.\n• App Tour: Discover mindXcape's main features, like mood tracking, journaling, and meditation exercises. An interactive tour guides you through each feature when you first log in.\n• Personalization: Customize your notifications, theme (light or dark mode), and language options to create a supportive mental health experience tailored to your needs.\n\nFrequently Asked Questions (FAQs)\n\n• How do I reset my password?\nGo to the login screen, tap 'Forgot Password?', and follow the steps to reset your password via email.\n\• What if my data isn’t syncing?\nEnsure you’re connected to the internet. If the issue persists, try logging out and back in. Your data will automatically sync when you reconnect.\n\• How does mindXcape protect my data?\nAll personal data is encrypted and stored securely on trusted cloud platforms. For more details, check out our Privacy section.\n\• Can I access mindXcape offline?\nYes, core features like mood tracking and meditation are available offline. Your data syncs when you reconnect.\n\nContact Support\n\n• Email Support: Email our team at support@mindxcape.com, and we’ll get back to you within 24 hours." />
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Navigation Bar Separator -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Home Icon -->
+        <ImageButton
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/home" />
+
+        <!-- Audio Icon -->
+        <ImageButton
+            android:id="@+id/nav_audio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/audio" />
+
+        <!-- Journal Icon -->
+        <ImageButton
+            android:id="@+id/nav_mood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mood" />
+
+        <ImageButton
+            android:id="@+id/nav_journal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/journal" />
+
+        <!-- Profile Icon -->
+        <ImageButton
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/profile" />
+    </LinearLayout>
+</LinearLayout>
+

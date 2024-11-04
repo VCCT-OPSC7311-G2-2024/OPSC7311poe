@@ -19,11 +19,13 @@
     <string name="audio_icon">Audio Icon</string>
     <string name="play_pause_button">Play/Pause Button</string>
     <string-array name="time_frame_options">
-        <item>Daily</item>
-        <item>Weekly</item>
-        <item>Monthly</item>
+        <item>Last 7 Days</item>
+        <item>Last 4 weeks</item>
     </string-array>
 
-</resources>
+    <string name="default_web_client_id">209246034470-62mvj42cjp6f88ndsailibq4gtb49jsl.apps.googleusercontent.com</string>
+    <string name="app_id">1:209246034470:android:47e1f9e29cfc8b8e4fe4e7</string>
 
 </resources>
+
+

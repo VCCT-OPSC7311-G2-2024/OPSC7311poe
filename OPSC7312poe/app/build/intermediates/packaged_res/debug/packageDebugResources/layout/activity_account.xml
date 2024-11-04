@@ -14,12 +14,12 @@
         android:padding="16dp"
         android:gravity="center_vertical">
 
-        <!-- Settings Button -->
+        <!-- Back Button -->
         <Button
-            android:id="@+id/settingsButton"
+            android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings"
+            android:text="Back"
             android:background="?android:attr/selectableItemBackground"
             android:textColor="@android:color/white"
             android:layout_gravity="start" />
@@ -75,25 +75,6 @@
             android:background="?android:attr/selectableItemBackground"
             android:textColor="@android:color/black" />
 
-        <!-- Security Button -->
-        <Button
-            android:id="@+id/securityButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Security"
-            android:background="?android:attr/selectableItemBackground"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="8dp" />
-
-        <!-- Notifications Button -->
-        <Button
-            android:id="@+id/notificationsButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Notifications"
-            android:background="?android:attr/selectableItemBackground"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="8dp" />
 
         <!-- Privacy Button -->
         <Button
@@ -190,6 +171,16 @@
             android:src="@drawable/audio" />
 
         <!-- Journal Icon -->
+        <ImageButton
+            android:id="@+id/nav_mood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mood" />
+
         <ImageButton
             android:id="@+id/nav_journal"
             android:layout_width="0dp"
