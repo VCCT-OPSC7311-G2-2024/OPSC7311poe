@@ -1,118 +1,121 @@
-mindXcape
-mindXcape is an Android application designed for mood tracking and journaling. Users can log their moods, visualize mood trends, and manage their profiles.
+mindXcape is a mental health companion mobile application designed to help users manage their mental well-being through various features such as guided meditations, mood tracking, journaling, and sleep aids. The application aims to provide users with tools and resources to enhance their mental health and overall well-being.
 
 
-Table of Contents
-Features
-Technologies
-Installation
-Usage
-Activities Overview
-License
+Features:
+•	User Registration and Authentication: Users can create an account and log in securely using Firebase Authentication.
+•	Guided Meditations: A curated selection of meditation sessions focused on different aspects like stress relief, focus, and sleep enhancement.
+•	Mood Tracking: Users can log their emotions daily and observe patterns and trends over time.
+•	Journaling: A private space for users to write about their thoughts and reflections.
+•	Sleep Aids: Includes sleep stories, relaxing sounds, and guided sleep meditations to improve sleep quality.
+•	Daily Quotes: Inspirational quotes displayed daily to encourage positive thinking.
+•	Offline Mode: Access essential features offline, with data syncing once reconnected to the internet.
+•	Biometric Authentication: Secure login options using fingerprint or face recognition.
 
 
-Features
-User registration and login
-Mood selection and logging
-Mood visualization with bar charts
-Journaling
-User profile management
+Getting Started
 
-
-Technologies
-Android SDK
-Kotlin
-Firebase Authentication
-Firebase Realtime Database
-MPAndroidChart for data visualization
-
+Prerequisites:
+•	Android Studio
+•	Kotlin 1.5 or higher
+•	Firebase project for authentication and database services
 
 
 Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/kurtsiebritz/OPSC7311poe.git
-Open the project in Android Studio.
-Set up Firebase in your project:
-Create a Firebase project in the Firebase Console.
-Add your Android app to the project and follow the setup instructions.
-Sync your project with Gradle files.
-Run the app on an emulator or a physical device.
+1. Clone the repository:
+   bash
+   git clone https://github.com/YOUR_USERNAME/mindXcape.git
+   cd mindXcape
+2.	Open the project in Android Studio.
+3.	Add your Firebase configuration:
+o	Go to the Firebase Console.
+o	Create a new project (if you have not already).
+o	Add your Android app and download the google-services.json file.
+o	Place the google-services.json file in the app/ directory.
+4.	Sync the project with Gradle files.
 
 
 
-Usage
-Launch the app.
-Register a new account or log in with existing credentials.
-Select your mood using the mood icons on the main screen.
-View your mood history and trends in the mood tracking section.
-Create a journal entry and save it.
-Navigate to your profile to edit account details.
+Running the App:
+1.	Connect your Android device or start an emulator.
+2.	Click the "Run" button in Android Studio to build and run the application.
 
 
 
+Project Structure:
+
+ 
+mindXcape/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── example/
+│   │   │   │           └── opsc7312poe/
+│   │   │   │               ├── Register.kt
+│   │   │   │               ├── Login.kt
+│   │   │   │               ├── MainActivity.kt
+│   │   │   │               └── other_activity_files.kt
+│   │   │   ├── res/
+│   │   │   │   ├── layout/
+│   │   │   │   ├── drawable/
+│   │   │   │   └── values/
+│   │   └── test/
+│   │       ├── java/
+│   │       └── androidTest/
+│   ├── build.gradle
+│   └── proguard-rules.pro
+├── build.gradle
+└── settings.gradle
+
+ 
 
 
 
+Testing:
+This project includes unit and UI tests using JUnit and Espresso. To run tests locally:
+1.	Open the test class you want to run in Android Studio.
+2.	Right-click on the test class or method and select "Run".
+
+
+CI/CD with GitHub Actions:
+The project is configured with GitHub Actions for automated testing and building. On each push to the main branch, the tests are automatically executed, and the build is validated.
+
+
+Contributing:
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
+
+
+License:
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+Acknowledgments:
+•	Firebase for providing backend services.
+•	Android Developers for the resources and documentation.
 
 
 
+Notes on the README:
+•	GitHub Username: Replace `YOUR_USERNAME` with your actual GitHub username in the clone command.
+•	Firebase Configuration: Ensure users know how to set up Firebase correctly, as this is crucial for the app’s functionality.
+•	Structure Overview: The directory structure provided is a high-level overview, so you may want to adjust the names of the activity files according to your actual project.
+•	Contribution Guidelines: You can expand this section based on how you want to manage contributions.
 
-Activities Overview
-MainActivity
-Description: The main interface where users can select their mood and navigate to other sections of the app.
-Features:
-Mood selection using icons.
-Save selected mood to Firebase.
-Navigation buttons to access different parts of the app (Profile, Journal, Audio, Mood Tracking).
-
-ComposeActivity
-Description: Allows users to write journal entries related to their mood.
-Features:
-Text input for journaling.
-Save entries linked to the selected mood.
-Optional image attachments.
-
-MoodTrack
-Description: Displays a bar chart of the user's mood history.
-Features:
-Visual representation of moods over time using a bar chart.
-Options to view mood data for the last 12 days or weekly averages.
-Dynamic updates based on user-selected time frames.
-
-EditProfileActivity
-Description: Enables users to update their profile information.
-Features:
-Fields to edit name, surname, email, and password.
-Update user information in Firebase.
+Release Notes:
+•	The login page has been updated to allow the user to register and log in to the app using single sign-on (SSO) and biometric authentication (fingerprint or facial recognition).
+•	Real-time notifications have been implemented and provide important messages and updates to the user.
+•	The user can change and save their settings in the account and edit profile pages.
+•	Multi-language support has been implemented, which includes the languages: English, Zulu and Xhosa.
+•	Offline mode with Sync has been implemented, which regards to saving moods.
+•	The navigation bar and all its components are working properly and the user can navigate and back and forth between pages.
+•	The mood track page now works correctly and displays moods in a pie chart and bar graph.
+•	Journal entries can now be saved and viewed. 
+•	The audio`s in the audio pages now work as well.
+•	All in the tabs in the account page work, such as the privacy, terms and conditions and help & support tabs and contain valuable information.
+•	A Quote REST API provides daily quotes to the user.
 
 
+Youtube video link:
 
-
-AccountActivity
-Description: Displays user account details and provides options for logging out.
-Features:
-Show user's name, email, and mood history.
-Logout functionality.
-
-Register
-Description: User registration activity for creating a new account.
-Features:
-Input fields for name, surname, email, password, and password confirmation.
-Firebase Authentication to create a new user account.
-Navigate to login screen if the user already has an account.
-
-Login
-Description: Allows users to log in to their existing account.
-Features:
-Input fields for email and password.
-Firebase Authentication to log in users.
-
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-
-Youtube Video Link:
-https://youtu.be/LypkwY1r6BM 
+https://youtu.be/hnjixCZmLkY 
